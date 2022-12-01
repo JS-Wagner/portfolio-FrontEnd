@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { LoginComponent } from './components/login/login.component';
 import { Router } from '@angular/router';
 import { HttpClientModule, HttpClient} from '@angular/common/http';
+import { Token } from '@angular/compiler';
 
 @Injectable({
   providedIn: 'root'
@@ -20,20 +21,13 @@ export class AuthService {
       })
   };
 
+  //Para cerrar sesión eliminamos el token del localStorage.
   logout() {
   localStorage.removeItem('token');
   }
 
+  //Verificar si existe la sesión.
   public get logIn(): boolean{
   return (localStorage.getItem('token') !== null);
   }
-
-  isLoggedIn() {
-    const token = localStorage.getItem('token'); // get token from local storage
-    const payload = atob(token.split('.')[1]); // decode payload of token
-    const parsedPayload = JSON.parse(payload); // convert payload into an Object
-
-    return parsedPayload.exp > Date.now() / 1000; // check if token is expired
-  }
 }
-

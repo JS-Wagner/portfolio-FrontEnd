@@ -10,7 +10,7 @@ body {
 }
 .form-login{
     width: 400px;
-    height: 340px;
+    height: 370px;
     background: #4e4d4d;
     margin: auto;
     margin-top: 180px;
@@ -47,7 +47,7 @@ body {
 .form-login p{
     height: 40px;
     text-align: center;
-    border-bottom: 1px solid;
+    border-bottom: 0px solid;
 }
 .form-login a{
     color: white;
