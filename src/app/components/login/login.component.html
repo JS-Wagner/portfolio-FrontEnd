@@ -1,14 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
 
 <head>
     <meta charset="utf-8">
     <title>Formulario Login</title>
-    <link rel="stylesheet" href="/src/app/components/login/login.component.css">
+    <link href="/src/app/components/login/login.component.css">
 </head>
 
 <body>
-    <form class="form-login" [formGroup]="form"  (ngSubmit)="onEnviar($event)">  
+    <form class="form-login" [formGroup]="form" (ngSubmit)="onEnviar($event)">  
         <h5>Formulario Login</h5>
         <div>
             <input id="emailInicioSesion" formControlName="email" class="controls" type="email" name="email" value="" placeholder="Email">
@@ -35,5 +33,3 @@
         <input id="submit" class="buttons" type="submit" name="" value="Ingresar">
     </form>
 </body>
-
-</html>

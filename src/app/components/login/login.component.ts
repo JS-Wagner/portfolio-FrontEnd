@@ -11,8 +11,7 @@ import { Validators} from '@angular/forms';
 })
 export class LoginComponent implements OnInit {
   form: FormGroup;
-
-  // Inyectar en el constructor el formBuilder
+  
   constructor(private formBuilder: FormBuilder){ 
     ///Creamos el grupo de controles para el formulario de login
     this.form= this.formBuilder.group({
