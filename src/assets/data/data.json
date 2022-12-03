@@ -1,0 +1,49 @@
+{
+    "name": "Juan Wagner",
+    "estudio": "Estudiante de Tudai",
+    "ubicacion": {
+        "pais": "(Argentina)",
+        "provincia": "Buenos Aires",
+        "ciudad": "Olavarria"
+    },
+    "about": {
+        "acerca": "Acerca De",
+        "info": "Empece a aprender programación en 2021 y desde entonces estuve incrementando mis conocimientos. Siempre me consideré una persona con un lado muy lógico y creativo. Desde que descubrí la programación en la secundaria, decidi que sería lo mejor para exprimir mis atributos."
+    },
+    "educacion": {
+        "educacion_1": {
+            "institucion": "Jose Manuel Estrada",
+            "duracion": "2016-2021",
+            "titulo": "Bachiller en economía y administración"
+        },
+        "educacion_2": {
+            "institucion": "Universidad Nacional del Centro de la Provincia (UNCPBA/UNICEN)",
+            "duracion": "2022-Presente",
+            "titulo": "Técnico en Desarrollo de Aplicaciones Informáticas"
+        }
+    },
+    "experiencia": {
+        "experiencia_1": {
+            "empresa": "blank",
+            "duracion": "blank",
+            "trabajorealizado": "blank"
+        },
+        "experiencia_2": {
+            "empresa": "blank",
+            "duracion": "blank",
+            "trabajorealizado": "blank"
+        }
+    },
+    "proyectos": {
+        "proyecto_1": {
+            "titulo": "Portfolio Personal",
+            "duracion": "20/10/2022-Presente",
+            "trabajorealizado": "Programacion"
+        },
+        "proyecto_2": {
+            "titulo": "blank",
+            "duracion": "blank",
+            "trabajorealizado": "blank"
+        }
+    }
+}
