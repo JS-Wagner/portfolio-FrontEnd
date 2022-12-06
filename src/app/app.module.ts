@@ -13,6 +13,8 @@ import { ProyectsComponent } from './components/proyects/proyects.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ServicesService } from './service/services.service';
+import { ArgPLogoComponent } from './components/arg-plogo/arg-plogo.component';
+import { BannerComponent } from './components/banner/banner.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { ServicesService } from './service/services.service';
     EducationComponent,
     SkillsComponent,
     ProyectsComponent,
-    FooterComponent
+    FooterComponent,
+    ArgPLogoComponent,
+    BannerComponent
   ],
   imports: [
     BrowserModule,

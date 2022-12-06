@@ -1,0 +1,13 @@
+div{
+    display: flex;
+    justify-content: center;
+}
+img{
+    width:85%;
+    height:600px;
+    border-left: 1px none transparent;
+    border-right: 1px none transparent;
+    border-top: 1px none transparent;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
