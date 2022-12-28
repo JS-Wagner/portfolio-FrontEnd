@@ -3,9 +3,6 @@
 body{
     margin: 0;
 }
-#fondototal{
-    background-image: url(/assets/images/fondolaterales.jpg);
-}
 .navbar-brand{
     margin-bottom: 1px;
 }
@@ -110,4 +107,6 @@ h4.card-title{
 
 html {
     scroll-behavior: smooth;
+    background-image: url(/assets/images/fondolaterales.jpg);
+    height: fit-content;
 }

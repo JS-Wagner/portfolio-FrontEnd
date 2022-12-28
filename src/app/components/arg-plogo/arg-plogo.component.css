@@ -1,4 +1,10 @@
+
+div{
+    background-color: rgb(176, 176, 223);
+}
 .container{
+    padding: 0px;
+    width: screen;
     display:flex;
     justify-content: space-between;
     align-items: center;
@@ -15,6 +21,10 @@
 }
 img{
     width:50px;
+}
+a{
+    text-decoration: none;
+    color: white; 
 }
 
 /*--- Celu ---*/

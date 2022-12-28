@@ -1,4 +1,3 @@
-
 <head>
     <meta charset="utf-8">
     <title>Formulario Login</title>
@@ -7,7 +6,7 @@
 
 <body>
     <form class="form-login" [formGroup]="form" (ngSubmit)="onEnviar($event)">  
-        <h5>Formulario Login</h5>
+        <h5>Login</h5>
         <div>
             <input id="emailInicioSesion" formControlName="email" class="controls" type="email" name="email" value="" placeholder="Email">
         </div>
@@ -22,12 +21,12 @@
         <div>
             <input id="contraseñaInicioSesion" formControlName="password" [class.border-danger]="MailValid" class="controls" type="password" name="contrasena" value="" placeholder="Contraseña">
         </div>
-        <div *ngIf="Password?.errors  && Password?.touched">
+         <div *ngIf="Password?.errors  && Password?.touched">
             <p *ngIf="Password?.hasError('required')" class="error">
-                El password es requerido.
+                La contraseña es requerida.
             </p>
-            <p *ngIf="Password?.errors?.['minlength']" class="error">
-                El password debe ser de 8 o más caracteres.
+               <p *ngIf="Password?.errors?.['minlength']" class="error">
+                La contraseña debe ser de 8 o más caracteres.
             </p>
             </div>
         <input id="submit" class="buttons" type="submit" name="" value="Ingresar">
