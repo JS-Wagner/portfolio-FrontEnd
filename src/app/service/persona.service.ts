@@ -6,6 +6,7 @@ import { persona } from '../model/persona.model';
 @Injectable({
   providedIn: 'root'
 })
+
 export class PersonaService {
   URL = 'http://localhost:8080/personas/';
 
