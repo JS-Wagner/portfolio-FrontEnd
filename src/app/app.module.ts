@@ -15,6 +15,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ServicesService } from './service/services.service';
 import { ArgPLogoComponent } from './components/arg-plogo/arg-plogo.component';
 import { BannerComponent } from './components/banner/banner.component';
+import { interceptorProvider} from './service/interceptor-service';
 
 @NgModule({
   declarations: [
@@ -37,7 +38,10 @@ import { BannerComponent } from './components/banner/banner.component';
     ReactiveFormsModule,
     HttpClientModule,
   ],
-  providers: [ServicesService],
+  providers: [
+    ServicesService,
+    interceptorProvider,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
