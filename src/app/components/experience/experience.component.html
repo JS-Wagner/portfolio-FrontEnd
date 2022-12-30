@@ -3,23 +3,31 @@
     <!--Experiencia-->
     <div id="empleo" class="card w-100">
         <div class="modifcardtitle">
-            <h5 class="card-title">{{misDatos.experiencia.experienciabase}}</h5>
+            <h5 class="card-title">Experiencia Laboral</h5>
         </div>
-        <!--Tarjeta 1-->
-        <div class="card w-75">
+        <!-- Creador de experiencias -->
+        <div class="card w-100" id="borderless">
+            <div class="col-lg-2 md-2 sm-2">
+                <button type="button" class="btn btn-dark" routerLink="/nuevaexp" *ngIf="isLogged">
+                    Nueva experiencia
+                </button>
+            </div>
             <div class="card-body">
-                <h5 class="card-title">{{misDatos.experiencia.experiencia_1.empresa}}</h5>
-                <h6 class="card-subtitle mb-2 text-muted">{{misDatos.experiencia.experiencia_1.duracion}}</h6>
-                <p class="card-text">{{misDatos.experiencia.experiencia_1.trabajorealizado}}</p>
+                <div class="col-lg-1 col-md-1 col-sm-1 .col-xs-1"> </div>
+                    <div class="col-lg-11 col-md-11 col-sm-5 .col-xs-3">
+                        <table class="table">
+                            <tbody>
+                                <tr *ngFor="let Explaboral of exp">
+                                    <td class="card-title">{{Explaboral.nombreE}}</td>
+                                    <td class="card-subtitle mb-2 text-muted">{{Explaboral.descripcionE}}</td>
+                                    <td *ngIf="isLogged"><button type="button" class="btn btn-dark" routerLink="/editexp/{{Explaboral.id}}"><i class="bi bi-pencil"></i>Edit</button></td>
+                                    <td *ngIf="isLogged"><button type="button" class="btn btn-dark" (click)="delete(Explaboral.id)"><i class="bi bi-trash3"></i>Del</button></td>
+                                </tr>
+                            </tbody>
+                        </table> 
+                    </div>  
+                </div>
             </div>
         </div>
-        <!--Tarjeta 2-->
-        <div class="card w-75">
-            <div class="card-body">
-                <h5 class="card-title">{{misDatos.experiencia.experiencia_2.empresa}}</h5>
-                <h6 class="card-subtitle mb-2 text-muted">{{misDatos.experiencia.experiencia_2.duracion}}</h6>
-                <p class="card-text">{{misDatos.experiencia.experiencia_2.trabajorealizado}}</p>
-            </div>
-        </div>
-    </div>
 </div>
+

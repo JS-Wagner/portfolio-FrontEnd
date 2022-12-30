@@ -16,6 +16,8 @@ import { ServicesService } from './service/services.service';
 import { ArgPLogoComponent } from './components/arg-plogo/arg-plogo.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { interceptorProvider} from './service/interceptor-service';
+import { NewExperienciaComponent } from './components/experience/new-experiencia.component';
+import { EditExperienceComponent } from './components/experience/edit-experience.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +31,9 @@ import { interceptorProvider} from './service/interceptor-service';
     ProyectsComponent,
     FooterComponent,
     ArgPLogoComponent,
-    BannerComponent
+    BannerComponent,
+    NewExperienciaComponent,
+    EditExperienceComponent
   ],
   imports: [
     BrowserModule,
