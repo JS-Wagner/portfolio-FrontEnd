@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { ServicesService } from 'src/app/service/services.service';
+import { Proyecto } from 'src/app/model/proyecto';
+import { SProyectoService } from 'src/app/service/s-proyecto.service';
+import { TokenService } from 'src/app/service/token.service';
 
 @Component({
   selector: 'app-proyects',
@@ -7,12 +9,38 @@ import { ServicesService } from 'src/app/service/services.service';
   styleUrls: ['./proyects.component.css']
 })
 export class ProyectsComponent implements OnInit{
+  pro: Proyecto[] = [];
   misDatos:any;
-  constructor(private datos: ServicesService){}
+  constructor(private sProyecto: SProyectoService, private tokenService: TokenService){}
+  
+  isLogged= false;
 
   ngOnInit(): void {
-    this.datos.obtenerDatos().subscribe(data =>{
-      this.misDatos = data;
-    });
+    this.cargarProyecto();
+    if(this.tokenService.getToken()){
+      this.isLogged = true;
+    } else {
+      this.isLogged = false;
+    }
   }
+  cargarProyecto(): void {
+    this.sProyecto.lista().subscribe(data => {this.pro = data;})
+    }
+
+    delete(id?: number) {
+      if (id != undefined) {
+        this.sProyecto.delete(id).subscribe(
+          data => {
+            this.cargarProyecto()
+          }, err => {
+            alert("No se pudo borrar el proyecto");
+          })
+      }
+    }
 }
+  
+  //ngOnInit(): void {
+  //this.datos.obtenerDatos().subscribe(data =>{
+  //  this.misDatos = data;
+  //});
+

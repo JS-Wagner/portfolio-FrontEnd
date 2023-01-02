@@ -6,6 +6,8 @@ import { NeweducacionComponent } from './components/education/neweducacion.compo
 import { EditExperienceComponent } from './components/experience/edit-experience.component';
 import { NewExperienciaComponent } from './components/experience/new-experiencia.component';
 import { HomeComponent } from './components/home/home.component';
+import { EditProyectoComponent } from './components/proyects/edit-proyecto.component';
+import { NewProyectoComponent } from './components/proyects/new-proyecto.component';
 
 const routes: Routes = [
     {path: 'login', component: LoginComponent},
@@ -13,8 +15,10 @@ const routes: Routes = [
     {path: '', redirectTo: '/home', pathMatch: 'full'},
     {path: 'nuevaexp', component: NewExperienciaComponent},
     {path: 'nuevaedu', component: NeweducacionComponent},
+    {path: 'nuevopro', component: NewProyectoComponent},
     {path: 'editexp/:id', component: EditExperienceComponent},
     {path: 'editedu/:id', component: EditeducacionComponent},
+    {path: 'editpro/:id', component: EditProyectoComponent},
 ];
 
 
