@@ -7,7 +7,7 @@ import { Explaboral } from '../model/explaboral';
   providedIn: 'root'
 })
 export class SExperienciaService {
-  expURL = 'http://localhost:8080/explaboral/'
+  expURL = 'https://backendjsw.onrender.com/explaboral/'
 
   constructor(private httpClient: HttpClient) { }
 
