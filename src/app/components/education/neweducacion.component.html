@@ -3,11 +3,11 @@
         <div>
             <form (ngSubmit)="onCreate()" novalidate #f="ngForm">
                 <div class="form-group">
-                    <label for="nombreE">Nombre institucion</label>
+                    <label for="nombreE" style="color: rgb(138, 64, 4)">Nombre institucion</label>
                     <input type="text" class="form-control" id="nombreE" name="nombreE" [(ngModel)]="nombreE" required>
                 </div>
                 <div class="form-group">
-                    <label for="descripcionE">Descripción de estudios</label>
+                    <label for="descripcionE" style="color: rgb(138, 64, 4)">Descripción de estudios</label>
                     <input type="text" class="form-control" id="descripcionE" name="descripcionE" [(ngModel)]="descripcionE" required>
                 </div>
                 <button class="btn btn-danger">

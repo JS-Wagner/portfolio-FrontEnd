@@ -33,9 +33,20 @@ body {
     border: 1px solid #017bab;
     margin-bottom: 15px;
     padding: 11px 10px;
-    background: #252323;
+    background: #060606;
     font-size: 14px;
     font-weight: bold;
+}
+input::placeholder{
+    color:#eebc70
+}
+
+button:active{
+    background-color: rgb(17, 223, 17)
+}
+
+input:focus {
+    background: rgb(168, 168, 168);
 }
 .buttons{
     width: 100%;
