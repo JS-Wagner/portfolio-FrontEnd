@@ -1,0 +1,13 @@
+{
+    "name": "Juan Wagner",
+    "estudio": "Estudiante de Tudai",
+    "ubicacion": {
+        "pais": "(Argentina)",
+        "provincia": "Buenos Aires",
+        "ciudad": "Olavarria"
+    },
+    "about": {
+        "acerca": "Acerca de mi",
+        "info": "Empece a aprender programación en 2021 y desde entonces estuve incrementando mis conocimientos. Siempre me consideré una persona con un lado muy lógico y creativo. Desde que descubrí la programación en la secundaria, decidi que sería lo mejor para exprimir mis atributos."
+    }
+}
