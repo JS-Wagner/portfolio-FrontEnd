@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Skills } from 'src/app/model/skills';
 import { SkillService } from 'src/app/service/skill.service';
@@ -8,7 +8,7 @@ import { SkillService } from 'src/app/service/skill.service';
   templateUrl: './new-skill.component.html',
   styleUrls: ['./new-skill.component.css']
 })
-export class NewSkillComponent {
+export class NewSkillComponent implements OnInit{
   nombre: string;
   porcentaje: number;
 
