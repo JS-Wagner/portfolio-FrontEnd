@@ -20,8 +20,8 @@
             </div> !-->
             <div class="card-body">
                 <div *ngFor="let skill of skill">
-                    <div class="card-title">Bolainas{{skill.nombre}}></div>
-                    <div role="progressbar" attr.aria-valuenow="{{skill.porcentaje}}" aria-valuemin="0" aria-valuemax="100" style="--value:100"></div>
+                    <div class="card-title">{{skill.nombre}}></div>
+                    <div role="progressbar" attr.aria-valuenow="{{skill.porcentaje}}" aria-valuemin="0" aria-valuemax="100" style="--value:{{skill.porcentaje}}"></div>
                 </div>
                 <table class="table">
                     <tbody>
