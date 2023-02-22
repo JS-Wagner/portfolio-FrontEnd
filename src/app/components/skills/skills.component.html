@@ -11,26 +11,55 @@
                     Nueva Skill
                 </button>
             </div>
-            <!-- <h4 class="card-title">Languajes</h4>
-            <div id="idiomas" class="skills" *ngFor="let skill of skill">
-                <h5 class="card-title">{{skill.nombre}}</h5>
-                <div role="progressbar" attr.aria-valuenow="{{skill.porcentaje}}" aria-valuemin="0" aria-valuemax="100"
-                    style="--value:{{skill.porcentaje}}">
-                </div>
-            </div> !-->
             <div class="card-body">
-                <div *ngFor="let skill of skill">
-                    <div class="card-title">{{skill.nombre}}></div>
-                    <div role="progressbar" attr.aria-valuenow="{{skill.porcentaje}}" aria-valuemin="0" aria-valuemax="100" style="--value:{{skill.porcentaje}}"></div>
+                <h4 class="card-title">Tech skills</h4>
+                <div class="col-lg-1 col-md-1 col-sm-1 .col-xs-1"></div>
+                <div class="col-lg-11 col-md-11 col-sm-5 .col-xs-3">
+                    <table class="table">
+                        <tbody>
+                            <tr *ngFor="let skill of skill">
+                                <td class="card-title">{{skill.nombre}}</td>
+                                <td><div role="progressbar" attr.aria-valuenow="{{skill.porcentaje}}" aria-valuemin="0" aria-valuemax="100" style="--value:{{skill.porcentaje}}"></div></td>
+                                <td *ngIf="isLogged">
+                                    <button type="button" class="btn btn-dark"
+                                        routerLink="/editskill/{{skill.id}}">
+                                        <i class="bi bi-pencil"></i>Edit
+                                    </button>
+                                </td>
+                                <td *ngIf="isLogged">
+                                    <button type="button" class="btn btn-dark" (click)="delete(skill.id)">
+                                        <i class="bi bi-trash3"></i>Del
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
-                <table class="table">
-                    <tbody>
-                        <tr *ngFor="let skill of skill">
-                            <td *ngIf="isLogged"><button type="button" class="btn btn-dark" routerLink="/editskill/{{skill.id}}"><i class="bi bi-pencil"></i>Edit</button></td>
-                            <td *ngIf="isLogged"><button type="button" class="btn btn-dark" (click)="delete(skill.id)"><i class="bi bi-trash3"></i>Del</button></td>
-                        </tr>
-                    </tbody>
-                </table>
+            </div>
+            <div class="card-body">
+                <h4 class="card-title">Languajes</h4>
+                <div class="col-lg-1 col-md-1 col-sm-1 .col-xs-1"></div>
+                <div class="col-lg-11 col-md-11 col-sm-5 .col-xs-3">
+                    <table class="table">
+                        <tbody>
+                            <tr *ngFor="let skill of skill">
+                                <td class="card-title">{{skill.nombre}}</td>
+                                <td><div role="progressbar" attr.aria-valuenow="{{skill.porcentaje}}" aria-valuemin="0" aria-valuemax="100" style="--value:{{skill.porcentaje}}"></div></td>
+                                <td *ngIf="isLogged">
+                                    <button type="button" class="btn btn-dark"
+                                        routerLink="/editskill/{{skill.id}}">
+                                        <i class="bi bi-pencil"></i>Edit
+                                    </button>
+                                </td>
+                                <td *ngIf="isLogged">
+                                    <button type="button" class="btn btn-dark" (click)="delete(skill.id)">
+                                        <i class="bi bi-trash3"></i>Del
+                                    </button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </div>

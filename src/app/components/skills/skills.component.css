@@ -48,3 +48,8 @@
     counter-reset: percentage var(--value);
     content: counter(percentage) '%';
   }
+  @media (max-width: 576px) {
+    button.btn.btn-dark{
+        display: none;
+    }
+}
