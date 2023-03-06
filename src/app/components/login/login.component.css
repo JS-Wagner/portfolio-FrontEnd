@@ -41,6 +41,14 @@ input::placeholder{
     color:#eebc70
 }
 
+.nombreUsuario{
+    color:rgb(168, 168, 168);
+}
+
+.password {
+    color:rgb(168, 168, 168);
+}
+
 button:active{
     background-color: rgb(17, 223, 17)
 }
