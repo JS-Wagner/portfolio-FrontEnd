@@ -1,0 +1,8 @@
+.container {
+    display: flex;
+    margin: 15%;
+}
+
+.form-group{
+    margin: 5%;
+}
