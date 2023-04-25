@@ -19,6 +19,8 @@ body {
     padding: 20px 30px;
     border-top: 4px solid #017bab;
     color: white;
+    border-top-left-radius: 15%;
+    border-top-right-radius: 15%;
 }
 .form-login h5{
     margin: 0;
@@ -34,8 +36,15 @@ body {
     margin-bottom: 15px;
     padding: 11px 10px;
     background: #b5b5b5;
+    background-color: white;
     font-size: 14px;
     font-weight: bold;
+}
+#password{
+    background-color: white;
+}
+#nombreUsuario{
+    background-color: white;
 }
 input::placeholder{
     color:#eebc70

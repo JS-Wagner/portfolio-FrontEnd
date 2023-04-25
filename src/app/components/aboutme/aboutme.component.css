@@ -7,7 +7,7 @@
     border-right: 1px solid gray;
     border-bottom: 1px solid gray;
     border-radius: 100%;
-    background-image: url("src/assets/images/messi2.jpeg");
+    background-image: url("src/assets/images/fotocurriculumjw.jpg");
     position: absolute;
 }
 .aboutme{
@@ -45,6 +45,7 @@
     font-size:18px;
     line-height: 5px;
     font-family:'Times New Roman', Times, serif;
+    overflow: hidden;
 }
 .aboutBelow{
     width: 100%;
