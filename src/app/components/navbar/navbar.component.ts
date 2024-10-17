@@ -4,9 +4,9 @@ import { TokenService } from 'src/app/service/token.service';
 import { LoginComponent } from '../login/login.component';
 
 @Component({
-  selector: 'app-arg-plogo',
-  templateUrl: './arg-plogo.component.html',
-  styleUrls: ['./arg-plogo.component.css']
+  selector: 'app-navbar',
+  templateUrl: './navbar.component.html',
+  styleUrls: ['./navbar.component.css'],
 })
 export class ArgPLogoComponent implements OnInit {
   isLogged = false;
@@ -14,19 +14,19 @@ export class ArgPLogoComponent implements OnInit {
   constructor(private router: Router, private tokenService: TokenService) {}
 
   ngOnInit(): void {
-    if (this.tokenService.getToken()){
-      this.isLogged=true;
-    }else{
-      this.isLogged=false;
+    if (this.tokenService.getToken()) {
+      this.isLogged = true;
+    } else {
+      this.isLogged = false;
     }
   }
 
-  onLogOut(): void{
+  onLogOut(): void {
     this.tokenService.logOut();
     window.location.reload();
   }
 
-    login() {
-      this.router.navigate(['/login']);
-    }
+  login() {
+    this.router.navigate(['/login']);
   }
+}

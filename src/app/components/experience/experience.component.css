@@ -1,9 +1,0 @@
-
-#borderless{
-    border: none;
-}
-@media (max-width: 576px) {
-    button.btn.btn-dark{
-        display: none;
-    }
-}

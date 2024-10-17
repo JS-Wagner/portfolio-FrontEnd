@@ -1,0 +1,63 @@
+/* Fondo del navbar */
+.navbar {
+    background-color: rgb(176, 176, 223); /* Mantiene el color de fondo */
+}
+
+#logo{
+    filter: invert(1);
+}
+
+/* Alinear los íconos y botones a la derecha */
+.redes {
+    display: flex;
+    align-items: center;
+    margin-left: auto; /* Asegura que el div de redes esté a la derecha */
+}
+
+/* Ajustar tamaño de las imágenes (íconos de redes sociales) */
+.social-icon {
+    width: 30px; /* Tamaño de los íconos */
+    transition: transform 0.3s ease; /* Añade una transición suave para el hover */
+}
+
+/* Efecto hover para los íconos de redes sociales */
+.social-icon:hover {
+    transform: scale(1.2); /* Escalar el icono al pasar el ratón */
+}
+
+/* Estilo de los enlaces (usar un color más oscuro para que sean visibles) */
+a {
+    text-decoration: none;
+    color: #000; /* Cambiado a negro para que sea visible sobre el fondo claro */
+}
+
+/* Cambiar color de los enlaces en hover */
+a:hover {
+    color: #007bff; /* Cambiar a un color azul al pasar el ratón */
+}
+
+/* Botones de login y cerrar sesión */
+.btn {
+    border-width: medium;
+    margin-left: 0.5em;
+}
+
+/* --- Estilos para pantallas móviles --- */
+@media (max-width: 575px) {
+    .container-fluid {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .redes {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 1em 0;
+    }
+
+    .social-icon {
+        margin: 0.2em;
+        width: 30px;
+    }
+}

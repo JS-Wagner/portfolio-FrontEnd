@@ -1,23 +1,35 @@
 @import "/node_modules/bootstrap/dist/css/bootstrap.min.css";
 
-body{
-    margin: 0;
+html, body {
+    height: 100%; /* Asegura que html y body ocupen toda la altura */
+    margin: 0; /* Elimina márgenes por defecto */
+    overflow-x: hidden;
 }
-.navbar-brand{
+
+app-home {
+    padding: 0 !important; /* Elimina el padding interno */
+    margin: 0 !important;  /* Asegura que no haya márgenes adicionales */
+    width: 100%; /* Asegura que el contenedor abarque todo el ancho */
+}
+
+.navbar-brand {
     margin-bottom: 1px;
 }
+
 .navbar-brand.cuc {
     font-size: 16px;
     margin-top: 3px;
 }
-.logo{
+
+.logo {
     width: auto;
     height: auto;
     margin-right: 10px;
     border: 1px solid white;
-    border-style:groove;
+    border-style: groove;
 }
-.banner3{
+
+.card-container {
     width: 85%;
     height: auto;
     border-top: 1px solid transparent;
@@ -25,29 +37,28 @@ body{
     border-left: 1px solid transparent;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
-    margin:auto;
+    margin: auto;
     margin-top: 3px;
-    /*
-    margin-left: 5px;
-    margin-right: 5px;
-    margin-top: 3px; 
-    */
     background-size: 100% 100%;
 }
-#banner4{
-    width: screen;
-    height: auto;
-    margin-top: 40px;
-    background-size: 100% 100%;
+
+#footer-container {
+    width: 100%; /* Asegúrate de que sea 100% */
+    margin: 0; /* Elimina márgenes que puedan causar desbordamiento */
+    padding: 20px 0; /* Ajusta el padding según sea necesario */
+    box-sizing: border-box; /* Incluye padding y borde en el ancho total */
+    background-size: 100% 100%; /* Asegúrate de que el fondo se ajuste correctamente */
 }
-h4.card-title{
+
+h4.card-title {
     margin-top: 10px;
     padding-left: 10px;
     border: 1px solid gray;
     border-radius: 30px;
-    background-color:cadetblue;
+    background-color: cadetblue;
 }
-.card.w-100{
+
+.card.w-100 {
     padding: 10px;
     margin-bottom: 4px;
     margin-left: 1px;
@@ -58,46 +69,60 @@ h4.card-title{
     border-bottom-right-radius: 30px;
     background-size: 100% 100%;
 }
-.skills{
+
+.skills {
     padding-left: 7%;
     padding-right: 7%;
     padding-bottom: 10px;
     padding-top: 10px;
 }
-.card.w-75{
+
+.card.w-75 {
     margin-top: 1px;
     margin-left: 1px;
     border: 1px;
     border-bottom-left-radius: 30px;
 }
-.modifcardtitle{
-    padding-left:14px;
+
+.modifcardtitle {
+    padding-left: 14px;
     padding-top: 6px;
 }
-.card-text{
-    font-size: 16px;
+
+.card-section-title{
+    font-size: 1.2rem;
+}
+
+.card-text {
+    font-size: 1rem;
     line-height: 20px;
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Roboto', sans-serif;
 }
-.bi{
-    margin-right:10px;
+
+.bi {
+    margin-right: 10px;
     margin-left: 5px;
-    width:30px;
-    height:30px;
+    width: 30px;
+    height: 30px;
 }
-.bi.bi-github{
+
+.bi.bi-github {
     fill: whitesmoke;
 }
-.bi.bi-github:hover{
+
+.bi.bi-github:hover {
     fill: white;
 }
-.bi.bi-facebook{
-    fill: blue;   
+
+.bi.bi-facebook {
+    fill: blue;
 }
-.bi.bi-facebook:hover{
-    fill: rgb(5,70,249);
+
+.bi.bi-facebook:hover {
+    fill: rgb(5, 70, 249);
 }
-.nav-link.login{
+
+.nav-link.login {
     margin-bottom: 1px;
     font-weight: bold;
     font-size: 20px;
@@ -109,4 +134,65 @@ html {
     scroll-behavior: smooth;
     background-image: url(/assets/images/fondolaterales.jpg);
     height: fit-content;
+}
+
+/* Nuevos estilos sugeridos */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4; /* Fondo claro */
+    color: #333; /* Texto oscuro */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 8px;
+    margin: 20px 0;
+    padding: 20px;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.02); /* Efecto de hover */
+}
+
+button {
+    background-color: #007bff; /* Botón azul */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3; /* Efecto de hover en botón */
+}
+
+/* Estilo para las tarjetas */
+.card-title {
+    font-size: 1.3rem; /* Aumentar el tamaño de la fuente */
+    margin-bottom: 0.5rem; /* Espacio debajo del título */
+}
+
+td.card-title {
+    font-size: 1rem; /* Aumentar el tamaño de la fuente */
+}
+
+/* Estilos globales para ocultar botones en pantallas pequeñas */
+@media (max-width: 576px) {
+    button.btn.btn-dark {
+        display: none;
+    }
+}
+
+/* Estilos globales para borderless */
+#borderless {
+    border: none;
 }

@@ -8,6 +8,10 @@
     },
     "about": {
         "acerca": "Acerca de mi",
-        "info": "Empece a aprender programación en 2021 y desde entonces estuve incrementando mis conocimientos. Siempre me consideré una persona con un lado muy lógico y creativo. Desde que descubrí la programación en la secundaria, decidi que sería lo mejor para exprimir mis atributos."
+        "info": "Desde que comencé mi camino en el desarrollo en 2021, he estado profundamente apasionado por la tecnología y su capacidad para resolver problemas y mejorar la vida cotidiana. Me gradué como técnico en desarrollo de aplicaciones en la Universidad Nacional del Centro de la Provincia de Buenos Aires (UNCPBA), donde adquirí habilidades sólidas en programación, diseño de software y desarrollo web.",
+        "info2": "A lo largo de mi formación, he trabajado en diversos proyectos que abarcan desde aplicaciones web hasta sistemas de gestión, lo que me ha permitido adquirir experiencia práctica en el uso de lenguajes de programación como Java, JavaScript, PHP, así como en frameworks como Angular y Spring Boot. También tengo conocimientos en bases de datos, incluyendo MySQL y PostgreSQL, además de tecnologías como JPA, que me han ayudado a desarrollar aplicaciones robustas y eficientes.",
+        "info3": "Me considero una persona proactiva y siempre estoy buscando aprender nuevas tecnologías y metodologías que me permitan mejorar mis habilidades. Disfruto trabajando en equipo y enfrentando desafíos, ya que creo que cada proyecto es una oportunidad para crecer y contribuir al éxito del grupo.",
+        "info4": "En la actualidad, estoy en busca de mi primera experiencia laboral formal, donde pueda aplicar mis conocimientos y seguir desarrollándome como profesional en el área IT.",
+        "info5": "Fuera del ámbito profesional, me gusta ver películas SCI-FI y pasar tiempo en familia, lo que me permite mantener un equilibrio entre mi vida personal y profesional."
     }
 }

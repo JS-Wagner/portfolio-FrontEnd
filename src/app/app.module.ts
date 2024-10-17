@@ -13,7 +13,7 @@ import { ProyectsComponent } from './components/proyects/proyects.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ServicesService } from './service/services.service';
-import { ArgPLogoComponent } from './components/arg-plogo/arg-plogo.component';
+import { ArgPLogoComponent } from './components/navbar/navbar.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { interceptorProvider} from './service/interceptor-service';
 import { NewExperienciaComponent } from './components/experience/new-experiencia.component';

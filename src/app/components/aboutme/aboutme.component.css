@@ -1,41 +1,35 @@
-.pfp1{
-    width: 90px;
-    height: 90px;
-    margin-left: 130px;
-    margin-top: -40px;
-    border-left: 1px solid gray;
-    border-right: 1px solid gray;
-    border-bottom: 1px solid gray;
-    border-radius: 100%;
-    background-image: url("src/assets/images/fotocurriculumjw.jpg");
-    position: absolute;
-}
-.aboutme{
+.aboutme {
+    position: relative; /* Para que los elementos posicionados dentro se alineen correctamente */
     width: 85%;
-    height: auto;
-    margin:auto;
-    /*
-    margin-left: 5px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-right: 5px;
-    */
-    border-top: 1px solid gray;
-    border-left: 1px solid gray;
-    border-right: 1px solid gray;
-    border-bottom: 1px solid gray;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-    background-size: 100% 100%;
+    margin: auto;
+    border: 1px solid gray;
+    border-radius: 0 0 30px 30px; /* Esquinas redondeadas */
     background-color: white;
 }
-.aboutIn{
-    padding: 15px;
-    width: auto;
-    height: auto;
+
+.pfp1 {
+    width: 90px;
+    height: 90px;
+    margin: -45px 0 0 20px; /* Ajustado para mover a la izquierda y centrar verticalmente */
+    border: 2px solid gray; /* Grosor del borde */
+    border-radius: 15px; /* Menos redondeado */
+    position: absolute; /* Permite que se superponga */
+    left: 0; /* Alineado a la izquierda */
+    overflow: hidden; /* Para que no se desborde */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para darle profundidad */
+    background-color: white; /* Fondo blanco para hacerla más estética */
+}
+
+
+.pfp1 img {
+    width: 100%; /* Mantiene la imagen dentro del contenedor */
+    height: 100%; /* Mantiene la imagen dentro del contenedor */
+    object-fit: cover; /* Mantiene la proporción de la imagen */
+}
+
+.aboutIn {
+    padding: 50px 15px 15px 15px; /* Ajustado el padding */
     margin-left: 5px;
-    margin-top: 10px;
-    padding-top: 50px;
 }
 .titleIn{
     font-family: 'Roboto Mono', monospace;

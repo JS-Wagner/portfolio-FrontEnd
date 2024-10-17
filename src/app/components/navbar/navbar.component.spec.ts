@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ArgPLogoComponent } from './arg-plogo.component';
+import { ArgPLogoComponent } from './navbar.component';
 
 describe('ArgPLogoComponent', () => {
   let component: ArgPLogoComponent;

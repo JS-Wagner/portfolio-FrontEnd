@@ -1,0 +1,36 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+            <img src="../../../favicon.ico" id="logo" alt="Logo" width="30" height="30">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <!-- Aquí se pueden agregar más enlaces si es necesario -->
+            </ul>
+        
+            <div class="d-flex align-items-center redes">
+                <a class="nav-link mx-2" href="https://www.facebook.com/juan.wagnercalvo" target="_blank">
+                    <img src="../../../assets/images/facebook.png" alt="facebook" class="social-icon">
+                </a>
+                <a class="nav-link mx-2" href="https://www.instagram.com/juanwagner_/" target="_blank">
+                    <img src="../../../assets/images/instagram.png" alt="instagram" class="social-icon">
+                </a>
+                <a class="nav-link mx-2" href="https://www.linkedin.com/in/juan-wagner-837aa8273/" target="_blank">
+                    <img src="../../../assets/images/linkedin.png" alt="linkedin" class="social-icon">
+                </a>
+                <a class="nav-link mx-2" href="https://github.com/JS-Wagner" target="_blank">
+                    <img src="../../../assets/images/github.png" alt="github" class="social-icon">
+                </a>
+        
+                <button *ngIf="!isLogged" class="btn btn-outline-primary ms-3" (click)="login()">Login</button>
+                <button *ngIf="isLogged" class="btn btn-outline-danger ms-3" (click)="onLogOut()">Cerrar Sesión</button>
+            </div>
+        </div>
+    </div>
+</nav>

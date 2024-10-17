@@ -1,13 +1,102 @@
-div{
-    display: flex;
-    justify-content: center;
+.banner {
+    position: relative;
+    width: 85%;
+    margin: auto;
+    height: 400px;
+    background-color: #282c34;
+    color: white;
+    padding: 40px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    overflow: hidden;
+    transition: background-color 0.3s;
 }
-img{
-    width:85%;
-    height:600px;
-    border-left: 1px none transparent;
-    border-right: 1px none transparent;
-    border-top: 1px none transparent;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
+
+/* Efecto de desvanecimiento y movimiento */
+.banner .code-fade-in {
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+h1 {
+    position: relative;
+    z-index: 10;
+}
+
+.code-typing,
+.code-fade-in {
+    position: relative;
+    opacity: 0;
+    animation: fadeIn 1s forwards; /* Efecto de aparición */
+}
+
+.code-typing {
+    animation: typing 4s steps(30, end), blink-caret 0.75s step-end infinite forwards;
+    animation-delay: 0s; /* Comienza de inmediato */
+}
+
+.code-fade-in {
+    animation-delay: 1.5s; /* Ajustado para cada línea */
+}
+
+.code-fade-in:nth-of-type(2) { animation-delay: 3s; }
+.code-fade-in:nth-of-type(3) { animation-delay: 4.5s; }
+.code-fade-in:nth-of-type(4) { animation-delay: 6s; }
+.code-fade-in:nth-of-type(5) { animation-delay: 7.5s; }
+.code-fade-in:nth-of-type(6) { animation-delay: 9s; }
+.code-fade-in:nth-of-type(7) { animation-delay: 10.5s; }
+.code-fade-in:nth-of-type(8) { animation-delay: 12s; }
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    50% { border-color: transparent; }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Efecto al pasar el puntero */
+.banner:hover {
+    cursor: pointer;
+}
+
+/* Efecto al hacer clic */
+.banner:active {
+    background-color: #3a3f47;
+}
+
+/* Clase para aplicar animaciones en el clic */
+.banner.active .code-fade-in {
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.keyword {
+    font-weight: bold; /* Hacer las palabras clave más prominentes */
+}
+
+.const {
+    color: #569CD6; /* Azul para const */
+}
+
+.console{
+    color: red; /* Rojo para console*/
+    font-weight: normal;
+}
+
+.let {
+    color: #C678DD; /* Morado para let */
+}
+
+.fun {
+    color: #C586C0; /* Rosa para fun */
+}
+
+.function-name {
+    color: #4EC9B0; /* Verde para el nombre de la función */
 }

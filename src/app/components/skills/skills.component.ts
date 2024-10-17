@@ -9,7 +9,7 @@ import { TokenService } from 'src/app/service/token.service';
   styleUrls: ['./skills.component.css']
 })
 export class SkillsComponent implements OnInit {
-  skill: Skills[] = [];
+  skills: Skills[] = [];
 
   constructor(private skillS: SkillService, private tokenService: TokenService) { }
   isLogged = false;
@@ -26,7 +26,7 @@ export class SkillsComponent implements OnInit {
   cargarSkills(): void {
     this.skillS.lista().subscribe(
       data => {
-        this.skill = data;
+        this.skills = data;
       }
     )
   }

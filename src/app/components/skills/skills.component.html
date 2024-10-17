@@ -1,9 +1,10 @@
-<div class="banner3">
+<div class="card-container">
     <!--Skills-->
     <div class="card w-100">
         <div class="modifcardtitle">
             <h5 class="card-title">Skills</h5>
         </div>
+
         <!-- Creador de Skills -->
         <div class="card w-100" id="borderless">
             <div class="col-lg-2 md-2 sm-2">
@@ -12,17 +13,19 @@
                 </button>
             </div>
             <div class="card-body">
-                <h4 class="card-title">Skills</h4>
-                <div class="col-lg-1 col-md-1 col-sm-1 .col-xs-1"></div>
-                <div class="col-lg-11 col-md-11 col-sm-5 .col-xs-3">
+                <!-- Sección de Skills Técnicas -->
+                <h4 class="card-section-title">Hard Skills</h4>
+                <div class="col-lg-11 col-md-11 col-sm-5">
                     <table class="table">
                         <tbody>
-                            <tr *ngFor="let skill of skill">
+                            <tr *ngFor="let skill of skills">
                                 <td class="card-title">{{skill.nombre}}</td>
-                                <td><div role="progressbar" attr.aria-valuenow="{{skill.porcentaje}}" aria-valuemin="0" aria-valuemax="100" style="--value:{{skill.porcentaje}}"></div></td>
+                                <td>
+                                    <div role="progressbar" attr.aria-valuenow="{{skill.porcentaje}}" aria-valuemin="0"
+                                        aria-valuemax="100" style="--value:{{skill.porcentaje}}"></div>
+                                </td>
                                 <td *ngIf="isLogged">
-                                    <button type="button" class="btn btn-dark"
-                                        routerLink="/editskill/{{skill.id}}">
+                                    <button type="button" class="btn btn-dark" routerLink="/editskill/{{skill.id}}">
                                         <i class="bi bi-pencil"></i>Edit
                                     </button>
                                 </td>
