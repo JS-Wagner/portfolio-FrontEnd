@@ -1,8 +1,19 @@
 #fondototal {
-    background-image: url(/assets/images/fondolaterales.jpg);
-    background-size: cover; 
-    background-repeat: repeat-y;
-    background-position: center;
+    background: linear-gradient(270deg, #3f2d70, #112749, #11423d);
+    background-size: 800% 800%; /* Define el tamaño del gradiente */
+    animation: gradientAnimation 20s ease infinite; /* Aplica la animación */
     width: 100%;
-    height: 100%;
+    height: 100%; /* Cambia a 100vh para que cubra toda la altura de la pantalla */
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }

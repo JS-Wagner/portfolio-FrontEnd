@@ -27,9 +27,10 @@
                 <a class="nav-link mx-2" href="https://github.com/JS-Wagner" target="_blank">
                     <img src="../../../assets/images/github.png" alt="github" class="social-icon">
                 </a>
-        
-                <button *ngIf="!isLogged" class="btn btn-outline-primary ms-3" (click)="login()">Login</button>
-                <button *ngIf="isLogged" class="btn btn-outline-danger ms-3" (click)="onLogOut()">Cerrar Sesión</button>
+            </div>
+            <div class="d-flex align-items-center btnLog">
+                <button *ngIf="!isLogged" class="btn btn-outline-primary" (click)="login()">Login</button>
+                <button *ngIf="isLogged" class="btn btn-outline-danger" (click)="onLogOut()">Cerrar Sesión</button>
             </div>
         </div>
     </div>

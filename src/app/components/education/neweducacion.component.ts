@@ -12,6 +12,7 @@ import { EducacionService } from 'src/app/service/educacion.service';
 export class NeweducacionComponent implements OnInit {
   nombreE: string = '';
   descripcionE: string = '';
+  fechaE: string = '';
 
   constructor(private sEducacion: EducacionService, private router: Router) {}
     
@@ -20,7 +21,7 @@ export class NeweducacionComponent implements OnInit {
     }
   
     onCreate(): void {
-      const edu = new Educacion(this.nombreE, this.descripcionE);
+      const edu = new Educacion(this.nombreE, this.descripcionE, this.fechaE);
       this.sEducacion.save(edu).subscribe(
         data =>{
           alert("Educacion añadida"); 

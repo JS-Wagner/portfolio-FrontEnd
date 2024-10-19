@@ -11,6 +11,7 @@ import { SProyectoService } from 'src/app/service/s-proyecto.service';
 export class NewProyectoComponent {
   nombreE: string = '';
   descripcionE: string = '';
+  fechaE: string = '';
   
   constructor(private sProyecto: SProyectoService, private router: Router) {}
 
@@ -19,7 +20,7 @@ export class NewProyectoComponent {
   }
 
   onCreate(): void {
-    const pro = new Proyecto(this.nombreE, this.descripcionE);
+    const pro = new Proyecto(this.nombreE, this.descripcionE, this.fechaE);
     this.sProyecto.save(pro).subscribe(
       data =>{
         alert("Proyecto añadido"); 

@@ -42,22 +42,91 @@ a:hover {
     margin-left: 0.5em;
 }
 
-/* --- Estilos para pantallas móviles --- */
+/* Ajustes del navbar para móviles */
 @media (max-width: 575px) {
-    .container-fluid {
-        flex-direction: column;
+    .navbar {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    #logo {
+        width: 25px;
+        height: 25px;
+    }
+
+    .navbar-toggler {
+        padding: 0.25rem 0.75rem;
+        font-size: 1rem;
+    }
+
+    .navbar-collapse {
         text-align: center;
     }
 
     .redes {
-        display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        justify-content: space-evenly;
         align-items: center;
-        margin: 1em 0;
     }
 
     .social-icon {
-        margin: 0.2em;
-        width: 30px;
+        width: 25px;
+        margin-bottom: 5px;
+    }
+
+    .btnLog {
+        flex-direction: column;
+        width: 100%;
+    }
+    .btn{
+        width: 100%;
+        margin: 0;
+        margin-top: 14px;
     }
 }
+
+/* Ajustes del navbar para tabletas y pantallas medianas */
+@media (min-width: 576px) and (max-width: 991px) {
+    .navbar {
+        padding: 15px;
+        font-size: 16px;
+    }
+
+    #logo {
+        width: 35px;
+        height: 35px;
+    }
+
+    .navbar-toggler {
+        padding: 0.5rem 1rem;
+        font-size: 1.1rem;
+    }
+
+    .navbar-collapse {
+        text-align: left;
+    }
+
+    .redes {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .social-icon {
+        width: 30px;
+        margin-bottom: 8px;
+    }
+
+    .btnLog {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    .btn{
+        width: 100%;
+        margin: 0;
+        margin-top: 14px;
+    }
+}
+
+

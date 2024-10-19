@@ -175,6 +175,12 @@ button:hover {
     background-color: #0056b3; /* Efecto de hover en botón */
 }
 
+button.btn.btn-dark.pen{
+    width: 90px;
+    height: 40px;
+    padding: 6px 12px;
+}
+
 /* Estilo para las tarjetas */
 .card-title {
     font-size: 1.3rem; /* Aumentar el tamaño de la fuente */
@@ -185,14 +191,95 @@ td.card-title {
     font-size: 1rem; /* Aumentar el tamaño de la fuente */
 }
 
-/* Estilos globales para ocultar botones en pantallas pequeñas */
+/* Estilos globales para borderless */
+#borderless {
+    border: none;
+}
+
+div .btd{
+    display: flex;
+    justify-content: flex-end;
+    gap: 2px;
+}
+
+/* Ajustes generales para pantallas pequeñas */
 @media (max-width: 576px) {
     button.btn.btn-dark {
         display: none;
     }
+
+    .card-container {
+        width: 95%; /* Aumenta el ancho del contenedor para que ocupe más espacio */
+        margin: 10px auto; /* Añade márgenes superiores e inferiores */
+    }
+
+    .card {
+        padding: 15px; /* Reduce el padding interno para tarjetas más compactas */
+    }
+
+    .modifcardtitle {
+        padding-left: 10px; /* Ajusta el padding para títulos */
+    }
+
+    .card-title {
+        font-size: 1.2rem; /* Tamaño de fuente más pequeño en móvil */
+    }
+
+    td.card-title {
+        font-size: 0.9rem; /* Tamaño de fuente más pequeño en móvil */
+    }
+
+    .btn {
+        width: 100%; /* Botones de ancho completo */
+        margin-top: 5px; /* Añade un margen superior a los botones */
+    }
+
+    .table {
+        font-size: 0.8rem; /* Tamaño de fuente más pequeño en tablas */
+    }
+
+    /* Estilos para ocultar algunos elementos si es necesario */
+    .col-lg-2, .col-lg-1 {
+        display: none; /* Ocultar columnas en móvil */
+    }
+
+    .col-lg-11 {
+        width: 100%; /* Asegura que el contenido ocupe el ancho completo */
+    }
+
+    #fe{
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .table td.card-subtitle.mb-2.text-mude{
+        max-width: 90px;
+        white-space: normal; /* Permitir saltos de línea */
+        overflow-wrap: break-word; /* Permitir que el texto largo se divida */
+    }
 }
 
-/* Estilos globales para borderless */
-#borderless {
-    border: none;
+@media (min-width: 577px) and (max-width: 1920px) {
+    #fe{
+        white-space: nowrap; /* Evitar saltos de línea en las fechas */
+        overflow: hidden; /* Ocultar el desbordamiento */
+        text-overflow: ellipsis; /* Agregar puntos suspensivos si el texto es demasiado largo */
+    }
+
+    .table td.card-subtitle.mb-2.text-mude{
+        max-width: 90px;
+        white-space: normal; /* Permitir saltos de línea */
+        overflow-wrap: break-word; /* Permitir que el texto largo se divida */
+    }
+
+    .table td.card-title{
+        max-width: 120px;
+        white-space: normal; /* Permitir saltos de línea */
+        overflow-wrap: break-word; /* Permitir que el texto largo se divida */
+    }
+
+    .table {
+        font-size: 0.9rem; /* Tamaño de fuente más pequeño en tablas */
+    }
 }

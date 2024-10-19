@@ -18,9 +18,14 @@
                             <tbody>
                                 <tr *ngFor="let Proyecto of pro">
                                     <td class="card-title">{{Proyecto.nombreE}}</td>
-                                    <td class="card-subtitle mb-2 text-muted">{{Proyecto.descripcionE}}</td>
-                                    <td *ngIf="isLogged"><button type="button" class="btn btn-dark" routerLink="/editpro/{{Proyecto.id}}"><i class="bi bi-pencil"></i>Edit</button></td>
-                                    <td *ngIf="isLogged"><button type="button" class="btn btn-dark" (click)="delete(Proyecto.id)"><i class="bi bi-trash3"></i>Del</button></td>
+                                    <td class="card-subtitle mb-2 text-muted" [innerHTML]="transformToLink(Proyecto.descripcionE)"></td>
+                                    <td class="card-subtitle mb-2 text-muted" id="fe">{{Proyecto.fechaE}}</td>
+                                    <td class="card-subtitle mb-2 text-muted">
+                                        <div class="btd">
+                                            <button type="button" class="btn btn-dark pen" *ngIf="isLogged" routerLink="/editpro/{{Proyecto.id}}"><i class="bi bi-pencil"></i>Edit</button>
+                                            <button type="button" class="btn btn-dark pen" *ngIf="isLogged" (click)="delete(Proyecto.id)"><i class="bi bi-trash3"></i>Del</button>
+                                        </div>
+                                    </td>
                                 </tr>
                             </tbody>
                         </table> 

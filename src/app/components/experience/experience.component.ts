@@ -10,7 +10,6 @@ import { Explaboral } from 'src/app/model/explaboral';
 })
 export class ExperienceComponent implements OnInit{
   exp: Explaboral[] = [];
-  misDatos:any;
   constructor(private sExperiencia: SExperienciaService, private tokenService: TokenService){}
 
   isLogged = false;
@@ -39,12 +38,4 @@ export class ExperienceComponent implements OnInit{
     }
   }
 }
-
-
-//ngOnInit(): void {    
-  //  this.datos.obtenerDatos().subscribe(data =>{ 
-    //  this.misDatos = data;
-  //});
-//}
-
 

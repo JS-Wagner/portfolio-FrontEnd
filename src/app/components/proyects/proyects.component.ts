@@ -10,7 +10,6 @@ import { TokenService } from 'src/app/service/token.service';
 })
 export class ProyectsComponent implements OnInit{
   pro: Proyecto[] = [];
-  misDatos:any;
   constructor(private sProyecto: SProyectoService, private tokenService: TokenService){}
   
   isLogged= false;
@@ -37,10 +36,12 @@ export class ProyectsComponent implements OnInit{
           })
       }
     }
-}
-  
-  //ngOnInit(): void {
-  //this.datos.obtenerDatos().subscribe(data =>{
-  //  this.misDatos = data;
-  //});
 
+    /**
+     * Detecta URLs en texto y transforma en links HTML.
+     */
+    transformToLink(text: string): string {
+      const urlPattern = /(\b(https?|ftp|file):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
+      return text.replace(urlPattern, '<a href="$1" target="_blank">$1</a>');
+    }
+}

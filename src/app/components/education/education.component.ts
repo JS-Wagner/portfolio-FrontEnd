@@ -10,7 +10,7 @@ import { TokenService } from 'src/app/service/token.service';
 })
 export class EducationComponent implements OnInit{
   educacion: Educacion[] = [];
-  misDatos:any;
+  
   constructor(private sEducacion: EducacionService, private tokenService: TokenService){}
 
   isLogged= false;
@@ -43,7 +43,3 @@ export class EducationComponent implements OnInit{
     }
   }
 }
-
-  //ngOnInit(): void {
-  //this.datos.obtenerDatos().subscribe(data =>{
-  //  this.misDatos = data;
